@@ -1,3 +1,11 @@
+# Firefox for iOS GodMode / Omega Zero-Footprint Edition
+
+> **Customized by Hikaproj**  
+> Twitter / X: [@hikaproj](https://x.com/hikaproj) | Website: [https://hikaproj.com](https://hikaproj.com) | Contact: [https://hikaproj.com/new/contact](https://hikaproj.com/new/contact)  
+> 📖 **詳細マニュアル & 全32機能仕様書:** [GODMODE_MANUAL.md](./GODMODE_MANUAL.md)
+
+---
+
 # Firefox for iOS and Focus iOS
 
 Download [Firefox iOS](https://apps.apple.com/app/firefox-web-browser/id989804926) and [Focus iOS](https://itunes.apple.com/app/id1055677337) on the App Store.

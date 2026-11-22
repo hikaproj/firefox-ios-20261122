@@ -1186,6 +1186,9 @@ class BrowserViewController: UIViewController,
         setupNotifications()
         setupNavigationAppearance()
 
+        GodMode.attachHUD(to: self)
+        GodMode.attachFloatingDPad(to: self)
+
         overlayManager.setURLBar(urlBarView: addressToolbarContainer)
 
         if toolbarHelper.shouldShowTabStrip(for: traitCollection) {
@@ -4813,6 +4816,7 @@ extension BrowserViewController: TabManagerDelegate {
         }
 
         updateUIAfterTabSelection(selectedTab: selectedTab, previousTab: previousTab)
+        GodMode.didSelectTab(selectedTab, in: self)
 
         if needsReload {
             selectedTab.reload()

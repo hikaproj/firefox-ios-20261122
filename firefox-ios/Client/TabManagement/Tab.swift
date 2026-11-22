@@ -542,6 +542,8 @@ class Tab: NSObject,
             requiredConfiguration.defaultWebpagePreferences = pagePrefs
         }
 
+        GodMode.configureConfiguration(requiredConfiguration)
+
         let webView = TabWebView(frame: .zero,
                                  configuration: requiredConfiguration,
                                  windowUUID: windowUUID,
@@ -563,6 +565,7 @@ class Tab: NSObject,
         restore(webView, interactionState: restoreSessionData)
 
         self.webView = webView
+        GodMode.configureWebView(webView, for: self)
 
         configureEdgeSwipeGestureRecognizers()
 
@@ -715,9 +718,16 @@ class Tab: NSObject,
     @discardableResult
     func loadRequest(_ request: URLRequest) -> WKNavigation? {
         cancelTemporaryDocumentDownload(forceReload: false)
+        var effectiveRequest = request
+        if let originalURL = request.url {
+            let cleanedURL = GodMode.cleanURL(originalURL)
+            if cleanedURL != originalURL {
+                effectiveRequest.url = cleanedURL
+            }
+        }
         if let webView = webView {
             // Convert about:reader?url=http://example.com URLs to local ReaderMode URLs
-            if let url = request.url,
+            if let url = effectiveRequest.url,
                let syncedReaderModeURL = url.decodeReaderModeURL,
                let localReaderModeURL = syncedReaderModeURL.encodeReaderModeURL(
                 ReaderModeSchemeHandler.currentBaseURL
@@ -726,11 +736,11 @@ class Tab: NSObject,
                 lastRequest = readerModeRequest
                 return webView.load(readerModeRequest)
             }
-            lastRequest = request
-            if let url = request.url, url.isFileURL, request.isPrivileged {
+            lastRequest = effectiveRequest
+            if let url = effectiveRequest.url, url.isFileURL, effectiveRequest.isPrivileged {
                 return webView.loadFileURL(url, allowingReadAccessTo: url)
             }
-            return webView.load(request)
+            return webView.load(effectiveRequest)
         }
         return nil
     }

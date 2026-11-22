@@ -1,0 +1,128 @@
+name: Build GodMode IPA
+
+on:
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: "Build Configuration"
+        required: true
+        default: "Release"
+        type: choice
+        options:
+          - Release
+          - Debug
+      create_release:
+        description: "Publish to GitHub Releases"
+        required: false
+        default: false
+        type: boolean
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-ipa:
+    name: Build & Package GodMode IPA
+    runs-on: macos-15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          submodules: recursive
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Select Xcode
+        run: |
+          echo "Available Xcode installations:"
+          ls -d /Applications/Xcode* || true
+          if [ -d "/Applications/Xcode_16.2.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+          elif [ -d "/Applications/Xcode_16.1.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+          else
+            sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+          fi
+          xcodebuild -version
+
+      - name: Install dependencies & Build UserScripts
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Run Firefox Bootstrap
+        run: |
+          ./bootstrap.sh firefox --force
+
+      - name: Build & Archive Client (Fennec)
+        env:
+          CONFIG: ${{ inputs.configuration || 'Release' }}
+        run: |
+          mkdir -p build
+          xcodebuild archive \
+            -project firefox-ios/Client.xcodeproj \
+            -scheme Fennec \
+            -configuration "$CONFIG" \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/Fennec.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            COMPILER_INDEX_STORE_ENABLE=NO
+
+      - name: Package IPA
+        run: |
+          mkdir -p build/Payload
+          cp -R build/Fennec.xcarchive/Products/Applications/Client.app build/Payload/
+          cd build
+          codesign --force --deep --sign - Payload/Client.app 2>/dev/null || true
+          zip -r9 Firefox-GodMode-Omega.ipa Payload
+          shasum -a 256 Firefox-GodMode-Omega.ipa > Firefox-GodMode-Omega.ipa.sha256
+          ls -lh Firefox-GodMode-Omega.ipa
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Firefox-GodMode-Omega-IPA
+          path: |
+            build/Firefox-GodMode-Omega.ipa
+            build/Firefox-GodMode-Omega.ipa.sha256
+          retention-days: 14
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v') || inputs.create_release == true
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Firefox GodMode / Omega Zero-Footprint Edition (${{ github.ref_name }})"
+          body: |
+            # Firefox-iOS GodMode / Omega Zero-Footprint Edition
+
+            **Customized by Hikaproj**  
+            - Twitter / X: [@hikaproj](https://x.com/hikaproj)  
+            - Website: [https://hikaproj.com](https://hikaproj.com)  
+            - Contact: [https://hikaproj.com/new/contact](https://hikaproj.com/new/contact)
+
+            ### Highlights
+            - 🚀 **Extreme RAM Reduction:** 2GB〜3GB devices keep background apps (Spotify, Discord, X) alive without Jetsam termination.
+            - ⚡ **32 God-Tier Modules:** DevTools, XHR/Fetch/WS Sniffer & Injector, RPA Macro, Local HTTP Server, SQLite FTS5 Knowledge DB, Smart Dark Mode, AI Summarizer, Media Extractor, Floating Dual View.
+            - 🛡️ **Sideload Ready:** Compatible with TrollStore, AltStore, SideStore, and LiveContainer.
+
+            ### Downloads
+            Download `Firefox-GodMode-Omega.ipa` below and install with TrollStore or AltStore.
+          files: |
+            build/Firefox-GodMode-Omega.ipa
+            build/Firefox-GodMode-Omega.ipa.sha256

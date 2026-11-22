@@ -174,6 +174,8 @@ class AppDelegate: UIResponder,
             }
         }
 
+        GodMode.bootstrap()
+
         logger.log("didFinishLaunchingWithOptions end",
                    level: .info,
                    category: .lifecycle)
@@ -294,6 +296,7 @@ class AppDelegate: UIResponder,
 
     func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
         logger.log("Received memory warning", level: .info, category: .lifecycle)
+        GodMode.handleMemoryPressure(windowManager: windowManager)
         Task {
             for uuid in windowManager.allWindowUUIDs(includingReserved: false) {
                 await windowManager.tabManager(for: uuid)?.offloadBackgroundWebViews()

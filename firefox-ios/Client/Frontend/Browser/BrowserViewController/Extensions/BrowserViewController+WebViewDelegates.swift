@@ -567,6 +567,10 @@ extension BrowserViewController: WKNavigationDelegate {
     /// Called when the WKWebView's content process has gone away. If this happens for the currently selected tab
     /// then we immediately reload it.
     func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+        if CrashGuardManager.shared.handleProcessTermination(webView: webView, in: self) {
+            return
+        }
+
         if let tab = tabManager.selectedTab, tab.webView == webView {
             tab.consecutiveCrashes += 1
 
@@ -1498,6 +1502,14 @@ extension BrowserViewController: WKNavigationDelegate {
 
         scrollController.configureRefreshControl()
         navigationHandler?.removeDocumentLoading()
+
+        if let url = webView.url?.absoluteString, let title = webView.title, !url.isEmpty {
+            webView.evaluateJavaScript("document.body ? document.body.innerText.substring(0, 32000) : ''") { result, _ in
+                if let text = result as? String, !text.isEmpty {
+                    OfflineKnowledgeDBEngine.shared.indexPage(title: title, url: url, content: text)
+                }
+            }
+        }
 
         if let tab = tabManager[webView] {
             if tab == tabManager.selectedTab {
