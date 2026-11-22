@@ -45,18 +45,30 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Select Xcode
+      - name: Select Xcode & Setup Toolchain
         run: |
           echo "Available Xcode installations:"
-          ls -d /Applications/Xcode* || true
-          if [ -d "/Applications/Xcode_16.2.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
-          elif [ -d "/Applications/Xcode_16.1.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+          ls -d /Applications/Xcode* 2>/dev/null || true
+          LATEST_XCODE=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -n 1)
+          if [ -n "$LATEST_XCODE" ]; then
+            echo "Selecting latest Xcode: $LATEST_XCODE"
+            sudo xcode-select -s "$LATEST_XCODE/Contents/Developer"
           else
             sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
           fi
           xcodebuild -version
+          swift --version
+
+      - name: Ensure Swift Tools Version Compatibility
+        run: |
+          SWIFT_VER=$(swift --version | head -n 1 | sed -E 's/.*version ([0-9]+\.[0-9]+).*/\1/')
+          echo "Runner Swift toolchain version: $SWIFT_VER"
+          # Ensure local package manifests do not request tools versions higher than runner's Swift version
+          for pkg in BrowserKit/Package.swift MozillaRustComponents/Package.swift Package.swift; do
+            if [ -f "$pkg" ]; then
+              sed -i '' -E "s/\/\/ swift-tools-version:[ ]*6\.[1-9]/\/\/ swift-tools-version: 6.0/" "$pkg" || true
+            fi
+          done
 
       - name: Install dependencies & Build UserScripts
         run: |
@@ -66,6 +78,12 @@ jobs:
       - name: Run Firefox Bootstrap
         run: |
           ./bootstrap.sh firefox --force
+
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project firefox-ios/Client.xcodeproj \
+            -scheme Fennec
 
       - name: Build & Archive Client (Fennec)
         env:

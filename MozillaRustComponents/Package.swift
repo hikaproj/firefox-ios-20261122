@@ -24,13 +24,13 @@ let package = Package(
         .target(
             name: "MozillaAppServices",
             dependencies: [
-                "MozillaRustComponents", .product(name: "Glean", package: "glean-swift"),
+                "MozillaRustComponents", .product(name: "Glean", package: "glean-swift")
             ],
             path: "Sources/MozillaRustComponentsWrapper",
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency"),
-                .unsafeFlags(["-enable-testing"]),
-            ],
+                .unsafeFlags(["-enable-testing"])
+            ]
         ),
         .target(
             name: "FocusAppServices",
