@@ -59,6 +59,11 @@ jobs:
           xcodebuild -version
           swift --version
 
+          # Trust and enable Swift Macros in non-interactive CI environments
+          defaults write com.apple.dt.Xcode IDESkipMacroFingerprintValidation -bool YES
+          defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
+          defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidation -bool YES
+
       - name: Ensure Swift Tools Version Compatibility
         run: |
           SWIFT_VER=$(swift --version | head -n 1 | sed -E 's/.*version ([0-9]+\.[0-9]+).*/\1/')
@@ -83,7 +88,9 @@ jobs:
         run: |
           xcodebuild -resolvePackageDependencies \
             -project firefox-ios/Client.xcodeproj \
-            -scheme Fennec
+            -scheme Fennec \
+            -skipMacroValidation \
+            -skipPackagePluginValidation
 
       - name: Build & Archive Client (Fennec)
         env:
@@ -96,6 +103,8 @@ jobs:
             -configuration "$CONFIG" \
             -destination 'generic/platform=iOS' \
             -archivePath build/Fennec.xcarchive \
+            -skipMacroValidation \
+            -skipPackagePluginValidation \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
