@@ -6,11 +6,13 @@ on:
       configuration:
         description: "Build Configuration"
         required: true
-        default: "Release"
+        default: "Fennec_Enterprise"
         type: choice
         options:
-          - Release
+          - Fennec_Enterprise
           - Debug
+          - Firefox
+          - Release
       create_release:
         description: "Publish to GitHub Releases"
         required: false
@@ -94,13 +96,18 @@ jobs:
 
       - name: Build & Archive Client (Fennec)
         env:
-          CONFIG: ${{ inputs.configuration || 'Release' }}
+          CONFIG: ${{ inputs.configuration || 'Fennec_Enterprise' }}
         run: |
           mkdir -p build
+          BUILD_CONFIG="$CONFIG"
+          if [ "$BUILD_CONFIG" = "Release" ]; then
+            BUILD_CONFIG="Fennec_Enterprise"
+          fi
+          echo "Selected archive configuration: $BUILD_CONFIG"
           xcodebuild archive \
             -project firefox-ios/Client.xcodeproj \
             -scheme Fennec \
-            -configuration "$CONFIG" \
+            -configuration "$BUILD_CONFIG" \
             -destination 'generic/platform=iOS' \
             -archivePath build/Fennec.xcarchive \
             -skipMacroValidation \

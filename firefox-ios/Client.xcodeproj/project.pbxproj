@@ -23,6 +23,7 @@
 		};
 /* End PBXAggregateTarget section */
 
+		GM00000000000000000000FB /* ActionExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E52190492EF03E6A0006D19E /* ActionExtensionKit */; };
 /* Begin PBXBuildFile section */
 		GM0000000000000000000020 /* GodMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000010 /* GodMode.swift */; };
 		GM0000000000000000000021 /* GodModeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000011 /* GodModeConfig.swift */; };
@@ -13190,6 +13191,7 @@
 				0B6D1C882E15456F00919F1E /* SummarizeKit in Frameworks */,
 				7B8A47F61D01D3B400C07734 /* PassKit.framework in Frameworks */,
 				EDD09DC12FCF6AB20038C8FA /* ModifiedCopy in Frameworks */,
+				GM00000000000000000000FB /* ActionExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -19364,6 +19366,7 @@
 				AA93B7142F6D95D6002E5E88 /* LLMKit */,
 				EDD592492FC1090C0015EF9E /* ModifiedCopy */,
 				9405F1D23013762800BF6B10 /* AppAttestKit */,
+				E52190492EF03E6A0006D19E /* ActionExtensionKit */,
 			);
 			productName = Client;
 			productReference = F84B21BE1A090F8100AAB793 /* Client.app */;

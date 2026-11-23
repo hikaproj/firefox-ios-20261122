@@ -23,16 +23,30 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ActionExtensionKit"
                BuildableName = "ActionExtensionKit"
                BlueprintName = "ActionExtensionKit"
                ReferencedContainer = "container:../BrowserKit">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CF609242EA8D46E00F069B6"
+               BuildableName = "ActionExtension.appex"
+               BlueprintName = "ActionExtension"
+               ReferencedContainer = "container:Client.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
