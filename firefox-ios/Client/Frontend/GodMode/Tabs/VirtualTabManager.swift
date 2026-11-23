@@ -11,12 +11,12 @@ public final class VirtualTabManager {
 
     private init() {}
 
-    public func didSelectTab(_ tab: Tab, in bvc: BrowserViewController) {
+    func didSelectTab(_ tab: Tab, in bvc: BrowserViewController) {
         TabHibernationManager.shared.markTabActive(tab)
         enforceLimit(in: bvc)
     }
 
-    public func enforceLimit(in bvc: BrowserViewController) {
+    func enforceLimit(in bvc: BrowserViewController) {
         let config = GodModeConfig.shared.state
         guard config.isEnabled else { return }
 

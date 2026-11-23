@@ -19,7 +19,7 @@ public final class CrashGuardManager {
         return quarantinedHosts.contains(host)
     }
 
-    public func handleProcessTermination(webView: WKWebView, in bvc: BrowserViewController) -> Bool {
+    func handleProcessTermination(webView: WKWebView, in bvc: BrowserViewController) -> Bool {
         guard GodModeConfig.shared.state.isEnabled,
               GodModeConfig.shared.state.isCrashGuardEnabled,
               let tab = bvc.tabManager[webView] else {

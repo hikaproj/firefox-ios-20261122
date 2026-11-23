@@ -74,7 +74,7 @@ public final class RAMJetsamHUDView: UIView {
         return button
     }()
 
-    public weak var bvc: BrowserViewController?
+    weak var bvc: BrowserViewController?
     private var panGesture: UIPanGestureRecognizer?
 
     override init(frame: CGRect) {

@@ -8,7 +8,7 @@ import WebKit
 
 @MainActor
 public final class FloatingDPadView: UIView {
-    public weak var bvc: BrowserViewController?
+    weak var bvc: BrowserViewController?
 
     private let mainContainer = UIVisualEffectView(effect: UIBlurEffect(style: .systemUltraThinMaterialDark))
     private let toggleButton = UIButton(type: .system)
@@ -147,7 +147,7 @@ public final class FloatingDPadView: UIView {
 
     @objc private func didTapDetox() {
         guard let bvc = bvc, let currentTab = bvc.tabManager.selectedTab else { return }
-        ProcessDetoxManager.shared.detox(tab: currentTab, in: bvc)
+        ProcessDetoxManager.shared.detoxTab(currentTab, in: bvc)
     }
 
     @objc private func didTapPiP() {
@@ -157,7 +157,7 @@ public final class FloatingDPadView: UIView {
 
     @objc private func didTapCloseTab() {
         guard let bvc = bvc, let currentTab = bvc.tabManager.selectedTab else { return }
-        bvc.tabManager.closeTab(currentTab)
+        bvc.tabManager.removeTab(currentTab.tabUUID)
     }
 
     @objc private func didTapDevTools() {

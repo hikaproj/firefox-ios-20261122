@@ -7,7 +7,7 @@ import UIKit
 
 @MainActor
 public final class GodModeSettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    public weak var bvc: BrowserViewController?
+    weak var bvc: BrowserViewController?
 
     private let tableView = UITableView(frame: .zero, style: .insetGrouped)
 
@@ -223,7 +223,7 @@ public final class GodModeSettingsViewController: UIViewController, UITableViewD
             case 1:
                 let filer = LocalFilerViewController()
                 filer.onSelectFileToOpen = { [weak self] url in
-                    self?.bvc?.tabManager.selectedTab?.load(URLRequest(url: url))
+                    self?.bvc?.tabManager.selectedTab?.loadRequest(URLRequest(url: url))
                 }
                 navigationController?.pushViewController(filer, animated: true)
             case 2:

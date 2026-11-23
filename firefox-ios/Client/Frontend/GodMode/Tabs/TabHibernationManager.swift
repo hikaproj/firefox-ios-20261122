@@ -18,7 +18,7 @@ public final class TabHibernationManager {
         startTimer()
     }
 
-    public func markTabActive(_ tab: Tab) {
+    func markTabActive(_ tab: Tab) {
         lastActiveTime[tab.tabUUID] = Date()
     }
 
@@ -53,7 +53,7 @@ public final class TabHibernationManager {
         }
     }
 
-    public func hibernateTab(_ tab: Tab) {
+    func hibernateTab(_ tab: Tab) {
         guard tab.webView != nil else { return }
 
         if let screenshot = tab.screenshot {

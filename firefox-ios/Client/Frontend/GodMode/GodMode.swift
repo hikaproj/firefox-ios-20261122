@@ -91,7 +91,7 @@ public final class GodMode {
         configuration.defaultWebpagePreferences = prefs
     }
 
-    public static func configureWebView(_ webView: WKWebView, for tab: Tab) {
+    static func configureWebView(_ webView: WKWebView, for tab: Tab) {
         guard GodModeConfig.shared.state.isEnabled else { return }
         RetinaLimiter.shared.applyScale(to: webView)
 
@@ -106,11 +106,11 @@ public final class GodMode {
         return AntiFingerprintingEngine.shared.cleanURL(url)
     }
 
-    public static func didSelectTab(_ tab: Tab, in bvc: BrowserViewController) {
+    static func didSelectTab(_ tab: Tab, in bvc: BrowserViewController) {
         VirtualTabManager.shared.didSelectTab(tab, in: bvc)
     }
 
-    public static func attachHUD(to bvc: BrowserViewController) {
+    static func attachHUD(to bvc: BrowserViewController) {
         guard GodModeConfig.shared.state.isEnabled,
               GodModeConfig.shared.state.isHUDVisible else { return }
 
@@ -123,7 +123,7 @@ public final class GodMode {
         bvc.view.addSubview(hud)
     }
 
-    public static func presentDevTools(from bvc: BrowserViewController) {
+    static func presentDevTools(from bvc: BrowserViewController) {
         let devToolsVC = DevToolsViewController()
         devToolsVC.activeWebView = bvc.tabManager.selectedTab?.webView
         let nav = UINavigationController(rootViewController: devToolsVC)
@@ -131,7 +131,7 @@ public final class GodMode {
         bvc.present(nav, animated: true)
     }
 
-    public static func showDualView(in bvc: BrowserViewController, url: URL? = nil) {
+    static func showDualView(in bvc: BrowserViewController, url: URL? = nil) {
         let dualVC = FloatingDualWebViewController()
         bvc.addChild(dualVC)
         bvc.view.addSubview(dualVC.view)
@@ -142,7 +142,7 @@ public final class GodMode {
         }
     }
 
-    public static func attachFloatingDPad(to bvc: BrowserViewController) {
+    static func attachFloatingDPad(to bvc: BrowserViewController) {
         guard GodModeConfig.shared.state.isEnabled,
               GodModeConfig.shared.state.isFloatingDPadVisible else { return }
 
@@ -151,7 +151,7 @@ public final class GodMode {
         bvc.view.addSubview(dpad)
     }
 
-    public static func presentSettings(from bvc: BrowserViewController) {
+    static func presentSettings(from bvc: BrowserViewController) {
         let settingsVC = GodModeSettingsViewController()
         settingsVC.bvc = bvc
         let nav = UINavigationController(rootViewController: settingsVC)
@@ -159,7 +159,7 @@ public final class GodMode {
         bvc.present(nav, animated: true)
     }
 
-    public static func handleMemoryPressure(windowManager: WindowManager) {
+    static func handleMemoryPressure(windowManager: WindowManager) {
         guard GodModeConfig.shared.state.isEnabled,
               GodModeConfig.shared.state.autoPurgeOnMemoryPressure else { return }
 

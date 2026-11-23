@@ -60,7 +60,7 @@ public final class RAMJetsamMonitor: @unchecked Sendable {
 
     public func currentSnapshot() -> MemorySnapshot {
         let footprint = queryPhysicalFootprint()
-        let available = os_proc_available_memory()
+        let available = UInt64(max(0, os_proc_available_memory()))
         let total = ProcessInfo.processInfo.physicalMemory
 
         return MemorySnapshot(
@@ -85,7 +85,7 @@ public final class RAMJetsamMonitor: @unchecked Sendable {
     }
 
     private func setupPressureSource() {
-        let source = DispatchSource.makeMemoryPressureSource(flags: [.warning, .critical], queue: .main)
+        let source = DispatchSource.makeMemoryPressureSource(eventMask: [.warning, .critical], queue: .main)
         source.setEventHandler { [weak self] in
             let flags = source.data
             self?.handlePressureEvent(flags: flags)

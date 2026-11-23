@@ -16,12 +16,13 @@ public struct ContentBlockerSubscription: Codable, Sendable {
 public final class NativeContentBlockerEngine {
     public static let shared = NativeContentBlockerEngine()
 
-    private let ruleStore = WKContentRuleListStore.default()
+    private let ruleStore: WKContentRuleListStore?
     private let defaultRuleListIdentifier = "org.mozilla.godmode.defaultBlockerList"
     private var compiledRuleList: WKContentRuleList?
     private var subscriptions: [ContentBlockerSubscription] = []
 
     private init() {
+        ruleStore = WKContentRuleListStore.default()
         compileBuiltInRules()
     }
 
@@ -38,6 +39,7 @@ public final class NativeContentBlockerEngine {
     }
 
     private func compileBuiltInRules() {
+        guard let ruleStore = ruleStore else { return }
         let rulesJSON = """
         [
             {
@@ -74,17 +76,25 @@ public final class NativeContentBlockerEngine {
             encodedContentRuleList: rulesJSON
         ) { [weak self] ruleList, error in
             guard let self = self, let ruleList = ruleList else { return }
-            self.compiledRuleList = ruleList
+            Task { @MainActor [weak self] in
+                self?.compiledRuleList = ruleList
+            }
         }
     }
 
     public func compileCustomRules(identifier: String, jsonString: String, completion: @escaping @Sendable (Bool) -> Void) {
+        guard let ruleStore = ruleStore else {
+            completion(false)
+            return
+        }
         ruleStore.compileContentRuleList(
             forIdentifier: identifier,
             encodedContentRuleList: jsonString
         ) { [weak self] ruleList, error in
             if let ruleList = ruleList {
-                self?.compiledRuleList = ruleList
+                Task { @MainActor [weak self] in
+                    self?.compiledRuleList = ruleList
+                }
                 completion(true)
             } else {
                 completion(false)

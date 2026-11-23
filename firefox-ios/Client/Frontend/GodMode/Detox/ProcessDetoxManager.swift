@@ -11,7 +11,7 @@ public final class ProcessDetoxManager {
 
     private init() {}
 
-    public func detoxTab(_ tab: Tab, in bvc: BrowserViewController) {
+    func detoxTab(_ tab: Tab, in bvc: BrowserViewController) {
         guard let url = tab.url ?? tab.lastKnownUrl else { return }
 
         Task { @MainActor [weak bvc, weak tab] in
