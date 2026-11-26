@@ -277,6 +277,9 @@
 /* Title for the `Suggestions from Search Engines` settings section in the Search page in the Settings menu. */
 "Settings.Search.EnginesSuggestions.Title.v124" = "Forslag fra søgetjenester";
 
+/* In the Search settings, this is the disclaimer underneath the Google Lens settings toggle that explains the conditions required for Google Lens to be available. */
+"Settings.Search.GoogleLens.Footnote.v153" = "Kun tilgængelig, når Google er aktiveret ovenfor og er din aktive søgetjeneste, mens du browser.";
+
 /* In the Search settings, this is the title that describes the Google Lens feature */
 "Settings.Search.GoogleLens.Title.v153" = "Google Lens";
 
@@ -382,6 +385,9 @@
 /* In the Appearance settings menu, in the Toolbar Button section, this label indicates that selecting this will make the New Tab button appear in the middle of the navigation toolbar. */
 "Settings.Toolbar.Navigation.MiddleButton.NewTab.v145" = "Nyt faneblad";
 
+/* Footer text below the auto-translate toggle in the Translation settings screen. */
+"Settings.Translation.AutoTranslate.Footer.v151" = "Oversætter automatisk sider til dit foretrukne sprog.";
+
 /* Title for the auto-translate toggle in the Translation settings screen. */
 "Settings.Translation.AutoTranslate.Title.v151" = "Oversæt automatisk";
 
@@ -418,11 +424,20 @@
 /* In the settings menu, in the General section, this is the title for the Translation settings section. */
 "Settings.Translation.Title.v145" = "Oversættelse";
 
+/* Footer text below the enable toggle in the Translation settings screen. */
+"Settings.Translation.ToggleFooter.v151" = "Slå dette fra for at fjerne oversættelse fra værktøjslinjen og menuen.";
+
 /* This is the title for the setting that toggles the Translation feature that allows users to translate web pages under the Translation settings section. */
 "Settings.Translation.ToggleTitle.v145" = "Aktiver oversættelser";
 
 /* Text displayed on the locations screen when the app loads a list of locations for the user to pick from. “Locations” here means the locations of VPN servers the user can connect to. */
 "VPN.LocationPicker.FindingLocationsText.v160" = "Finder placeringer…";
+
+/* Subtitle text shown on the VPN location picker screen when the app fails to load a list of locations. Suggests the user try loading the list of locations again soon. “Locations” here means the locations of VPN servers the user can connect to. */
+"VPN.LocationPicker.NoLocationsSubtitle.v162" = "Prøv igen om et par minutter.";
+
+/* Title shown on the VPN location picker screen when the app fails to load a list of locations. “Locations” here means the locations of VPN servers the user can connect to. */
+"VPN.LocationPicker.NoLocationsTitle.v162" = "Kunne ikke indlæse placeringer";
 
 /* Option in the VPN server location list. Choosing it lets the app pick the server with the fastest connection. */
 "VPN.LocationPicker.RecommendedMainText.v160" = "Anbefalet";

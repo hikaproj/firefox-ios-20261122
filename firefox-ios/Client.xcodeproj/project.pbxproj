@@ -23,47 +23,7 @@
 		};
 /* End PBXAggregateTarget section */
 
-		GM00000000000000000000FB /* ActionExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E52190492EF03E6A0006D19E /* ActionExtensionKit */; };
 /* Begin PBXBuildFile section */
-		GM0000000000000000000020 /* GodMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000010 /* GodMode.swift */; };
-		GM0000000000000000000021 /* GodModeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000011 /* GodModeConfig.swift */; };
-		GM0000000000000000000022 /* SideloadResiliencePatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000012 /* SideloadResiliencePatcher.swift */; };
-		GM0000000000000000000023 /* BackgroundDietManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000013 /* BackgroundDietManager.swift */; };
-		GM0000000000000000000024 /* RAMJetsamMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000014 /* RAMJetsamMonitor.swift */; };
-		GM0000000000000000000025 /* RAMJetsamHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000015 /* RAMJetsamHUDView.swift */; };
-		GM0000000000000000000026 /* ProcessDetoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000016 /* ProcessDetoxManager.swift */; };
-		GM0000000000000000000027 /* CrashGuardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000017 /* CrashGuardManager.swift */; };
-		GM0000000000000000000040 /* GodModeProcessPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000030 /* GodModeProcessPool.swift */; };
-		GM0000000000000000000041 /* TabHibernationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000031 /* TabHibernationManager.swift */; };
-		GM0000000000000000000042 /* VirtualTabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000032 /* VirtualTabManager.swift */; };
-		GM0000000000000000000043 /* ExtremeLiteScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000033 /* ExtremeLiteScriptEngine.swift */; };
-		GM0000000000000000000044 /* RetinaLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000034 /* RetinaLimiter.swift */; };
-		GM0000000000000000000045 /* DynamicJSEngineKiller.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000035 /* DynamicJSEngineKiller.swift */; };
-		GM0000000000000000000046 /* ThermalThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000036 /* ThermalThrottler.swift */; };
-		GM0000000000000000000060 /* NativeContentBlockerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000050 /* NativeContentBlockerEngine.swift */; };
-		GM0000000000000000000061 /* UserScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000051 /* UserScriptEngine.swift */; };
-		GM0000000000000000000062 /* MediaPlaybackPiPEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000052 /* MediaPlaybackPiPEngine.swift */; };
-		GM0000000000000000000080 /* NetworkMITMEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000070 /* NetworkMITMEngine.swift */; };
-		GM0000000000000000000081 /* JSTimeWarpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000071 /* JSTimeWarpEngine.swift */; };
-		GM0000000000000000000082 /* AntiAntiDebugEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000072 /* AntiAntiDebugEngine.swift */; };
-		GM0000000000000000000083 /* AntiAdblockDefusalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000073 /* AntiAdblockDefusalEngine.swift */; };
-		GM00000000000000000000A0 /* ProfileIsolationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000090 /* ProfileIsolationManager.swift */; };
-		GM00000000000000000000A1 /* SessionCloneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000091 /* SessionCloneEngine.swift */; };
-		GM00000000000000000000A2 /* AntiFingerprintingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000092 /* AntiFingerprintingEngine.swift */; };
-		GM00000000000000000000C0 /* DevToolsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B0 /* DevToolsEngine.swift */; };
-		GM00000000000000000000C1 /* WebSocketMonitorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B1 /* WebSocketMonitorEngine.swift */; };
-		GM00000000000000000000C2 /* LocalHTTPServerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B2 /* LocalHTTPServerEngine.swift */; };
-		GM00000000000000000000C3 /* DevToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B3 /* DevToolsViewController.swift */; };
-		GM00000000000000000000E0 /* AISummaryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D0 /* AISummaryEngine.swift */; };
-		GM00000000000000000000E1 /* SmartDarkModeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D1 /* SmartDarkModeEngine.swift */; };
-		GM00000000000000000000E2 /* FloatingDualWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D2 /* FloatingDualWebViewController.swift */; };
-		GM00000000000000000000G0 /* MacroEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F0 /* MacroEngine.swift */; };
-		GM00000000000000000000G1 /* MediaBatchDownloaderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F1 /* MediaBatchDownloaderEngine.swift */; };
-		GM00000000000000000000G2 /* OfflineKnowledgeDBEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F2 /* OfflineKnowledgeDBEngine.swift */; };
-		GM00000000000000000000G3 /* LocalFilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F3 /* LocalFilerViewController.swift */; };
-		GM00000000000000000000G4 /* FloatingDPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F4 /* FloatingDPadView.swift */; };
-		GM00000000000000000000G5 /* DOMChangeAlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F5 /* DOMChangeAlertEngine.swift */; };
-		GM00000000000000000000G6 /* GodModeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F6 /* GodModeSettingsViewController.swift */; };
 		032CE5F62EBA0C04007CCC0D /* ToUExperiencePointsCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032CE5F52EBA0C04007CCC0D /* ToUExperiencePointsCalculatorTests.swift */; };
 		033A5FCC2E5F001200A84E8A /* TermsOfUseTelemetryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A5FCB2E5F001200A84E8A /* TermsOfUseTelemetryTests.swift */; };
 		033A62002E77FE9900A84E8A /* ResetTermsOfServiceAcceptancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A61FF2E77FE9900A84E8A /* ResetTermsOfServiceAcceptancePage.swift */; };
@@ -2536,7 +2496,6 @@
 		F83869BD2D5EACA500E8B999 /* RustKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83869BC2D5EAC8F00E8B999 /* RustKeychain.swift */; };
 		F83869BF2D5EB75600E8B999 /* MockRustKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83869BE2D5EB74C00E8B999 /* MockRustKeychain.swift */; };
 		F84B21DA1A090F8100AAB793 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21D91A090F8100AAB793 /* ClientTests.swift */; };
-		GM00000000000000000000T1 /* GodModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000T0 /* GodModeTests.swift */; };
 		F84B22041A0910F600AAB793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21E51A0910F600AAB793 /* AppDelegate.swift */; };
 		F84B220B1A0910F600AAB793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84B21EF1A0910F600AAB793 /* Images.xcassets */; };
 		F84B22241A09122500AAB793 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B22221A09122500AAB793 /* LibraryViewController.swift */; };
@@ -2590,6 +2549,47 @@
 		FEEDFACE000000000000FC01 /* VPNKit in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDFACE000000000000FC02 /* VPNKit */; };
 		FF0002AA2F000002000BBBBB /* ClearablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0002AA2F000001000BBBBB /* ClearablesTests.swift */; };
 		FF0005AD2F000004000BBBBB /* MockQuickAnswersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0005AC2F000003000BBBBB /* MockQuickAnswersStore.swift */; };
+		GM0000000000000000000020 /* GodMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000010 /* GodMode.swift */; };
+		GM0000000000000000000021 /* Core/GodModeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000011 /* Core/GodModeConfig.swift */; };
+		GM0000000000000000000022 /* Sideload/SideloadResiliencePatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000012 /* Sideload/SideloadResiliencePatcher.swift */; };
+		GM0000000000000000000023 /* Diet/BackgroundDietManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000013 /* Diet/BackgroundDietManager.swift */; };
+		GM0000000000000000000024 /* Memory/RAMJetsamMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000014 /* Memory/RAMJetsamMonitor.swift */; };
+		GM0000000000000000000025 /* UI/RAMJetsamHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000015 /* UI/RAMJetsamHUDView.swift */; };
+		GM0000000000000000000026 /* Detox/ProcessDetoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000016 /* Detox/ProcessDetoxManager.swift */; };
+		GM0000000000000000000027 /* CrashGuard/CrashGuardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000017 /* CrashGuard/CrashGuardManager.swift */; };
+		GM0000000000000000000040 /* Process/GodModeProcessPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000030 /* Process/GodModeProcessPool.swift */; };
+		GM0000000000000000000041 /* Tabs/TabHibernationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000031 /* Tabs/TabHibernationManager.swift */; };
+		GM0000000000000000000042 /* Tabs/VirtualTabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000032 /* Tabs/VirtualTabManager.swift */; };
+		GM0000000000000000000043 /* Scripting/ExtremeLiteScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000033 /* Scripting/ExtremeLiteScriptEngine.swift */; };
+		GM0000000000000000000044 /* Display/RetinaLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000034 /* Display/RetinaLimiter.swift */; };
+		GM0000000000000000000045 /* Engine/DynamicJSEngineKiller.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000035 /* Engine/DynamicJSEngineKiller.swift */; };
+		GM0000000000000000000046 /* Thermal/ThermalThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000036 /* Thermal/ThermalThrottler.swift */; };
+		GM0000000000000000000060 /* Blocker/NativeContentBlockerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000050 /* Blocker/NativeContentBlockerEngine.swift */; };
+		GM0000000000000000000061 /* Userscript/UserScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000051 /* Userscript/UserScriptEngine.swift */; };
+		GM0000000000000000000062 /* Media/MediaPlaybackPiPEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000052 /* Media/MediaPlaybackPiPEngine.swift */; };
+		GM0000000000000000000080 /* MITM/NetworkMITMEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000070 /* MITM/NetworkMITMEngine.swift */; };
+		GM0000000000000000000081 /* TimeWarp/JSTimeWarpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000071 /* TimeWarp/JSTimeWarpEngine.swift */; };
+		GM0000000000000000000082 /* AntiDebug/AntiAntiDebugEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000072 /* AntiDebug/AntiAntiDebugEngine.swift */; };
+		GM0000000000000000000083 /* AntiAdblock/AntiAdblockDefusalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000073 /* AntiAdblock/AntiAdblockDefusalEngine.swift */; };
+		GM00000000000000000000A0 /* Profile/ProfileIsolationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000090 /* Profile/ProfileIsolationManager.swift */; };
+		GM00000000000000000000A1 /* Session/SessionCloneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000091 /* Session/SessionCloneEngine.swift */; };
+		GM00000000000000000000A2 /* Privacy/AntiFingerprintingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM0000000000000000000092 /* Privacy/AntiFingerprintingEngine.swift */; };
+		GM00000000000000000000C0 /* DevTools/DevToolsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B0 /* DevTools/DevToolsEngine.swift */; };
+		GM00000000000000000000C1 /* DevTools/WebSocketMonitorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B1 /* DevTools/WebSocketMonitorEngine.swift */; };
+		GM00000000000000000000C2 /* Server/LocalHTTPServerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B2 /* Server/LocalHTTPServerEngine.swift */; };
+		GM00000000000000000000C3 /* DevTools/DevToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000B3 /* DevTools/DevToolsViewController.swift */; };
+		GM00000000000000000000E0 /* AI/AISummaryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D0 /* AI/AISummaryEngine.swift */; };
+		GM00000000000000000000E1 /* DarkMode/SmartDarkModeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D1 /* DarkMode/SmartDarkModeEngine.swift */; };
+		GM00000000000000000000E2 /* DualView/FloatingDualWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000D2 /* DualView/FloatingDualWebViewController.swift */; };
+		GM00000000000000000000FB /* ActionExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E52190492EF03E6A0006D19E /* ActionExtensionKit */; };
+		GM00000000000000000000G0 /* Automation/MacroEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F0 /* Automation/MacroEngine.swift */; };
+		GM00000000000000000000G1 /* Media/MediaBatchDownloaderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F1 /* Media/MediaBatchDownloaderEngine.swift */; };
+		GM00000000000000000000G2 /* Knowledge/OfflineKnowledgeDBEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F2 /* Knowledge/OfflineKnowledgeDBEngine.swift */; };
+		GM00000000000000000000G3 /* Filer/LocalFilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F3 /* Filer/LocalFilerViewController.swift */; };
+		GM00000000000000000000G4 /* UI/FloatingDPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F4 /* UI/FloatingDPadView.swift */; };
+		GM00000000000000000000G5 /* Automation/DOMChangeAlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F5 /* Automation/DOMChangeAlertEngine.swift */; };
+		GM00000000000000000000G6 /* Settings/GodModeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000F6 /* Settings/GodModeSettingsViewController.swift */; };
+		GM00000000000000000000T1 /* GodModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = GM00000000000000000000T0 /* GodModeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2924,45 +2924,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		GM0000000000000000000010 /* GodMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodMode.swift; sourceTree = "<group>"; };
-		GM0000000000000000000011 /* GodModeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/GodModeConfig.swift; sourceTree = "<group>"; };
-		GM0000000000000000000012 /* SideloadResiliencePatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sideload/SideloadResiliencePatcher.swift; sourceTree = "<group>"; };
-		GM0000000000000000000013 /* BackgroundDietManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet/BackgroundDietManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000014 /* RAMJetsamMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory/RAMJetsamMonitor.swift; sourceTree = "<group>"; };
-		GM0000000000000000000015 /* RAMJetsamHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI/RAMJetsamHUDView.swift; sourceTree = "<group>"; };
-		GM0000000000000000000016 /* ProcessDetoxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detox/ProcessDetoxManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000017 /* CrashGuardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashGuard/CrashGuardManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000030 /* GodModeProcessPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process/GodModeProcessPool.swift; sourceTree = "<group>"; };
-		GM0000000000000000000031 /* TabHibernationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs/TabHibernationManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000032 /* VirtualTabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs/VirtualTabManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000033 /* ExtremeLiteScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripting/ExtremeLiteScriptEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000034 /* RetinaLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display/RetinaLimiter.swift; sourceTree = "<group>"; };
-		GM0000000000000000000035 /* DynamicJSEngineKiller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine/DynamicJSEngineKiller.swift; sourceTree = "<group>"; };
-		GM0000000000000000000036 /* ThermalThrottler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermal/ThermalThrottler.swift; sourceTree = "<group>"; };
-		GM0000000000000000000050 /* NativeContentBlockerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocker/NativeContentBlockerEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000051 /* UserScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userscript/UserScriptEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000052 /* MediaPlaybackPiPEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media/MediaPlaybackPiPEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000070 /* NetworkMITMEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MITM/NetworkMITMEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000071 /* JSTimeWarpEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWarp/JSTimeWarpEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000072 /* AntiAntiDebugEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiDebug/AntiAntiDebugEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000073 /* AntiAdblockDefusalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiAdblock/AntiAdblockDefusalEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000090 /* ProfileIsolationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile/ProfileIsolationManager.swift; sourceTree = "<group>"; };
-		GM0000000000000000000091 /* SessionCloneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session/SessionCloneEngine.swift; sourceTree = "<group>"; };
-		GM0000000000000000000092 /* AntiFingerprintingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy/AntiFingerprintingEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000B0 /* DevToolsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/DevToolsEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000B1 /* WebSocketMonitorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/WebSocketMonitorEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000B2 /* LocalHTTPServerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server/LocalHTTPServerEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000B3 /* DevToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/DevToolsViewController.swift; sourceTree = "<group>"; };
-		GM00000000000000000000D0 /* AISummaryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI/AISummaryEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000D1 /* SmartDarkModeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode/SmartDarkModeEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000D2 /* FloatingDualWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualView/FloatingDualWebViewController.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F0 /* MacroEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation/MacroEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F1 /* MediaBatchDownloaderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media/MediaBatchDownloaderEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F2 /* OfflineKnowledgeDBEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledge/OfflineKnowledgeDBEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F3 /* LocalFilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filer/LocalFilerViewController.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F4 /* FloatingDPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI/FloatingDPadView.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F5 /* DOMChangeAlertEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation/DOMChangeAlertEngine.swift; sourceTree = "<group>"; };
-		GM00000000000000000000F6 /* GodModeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings/GodModeSettingsViewController.swift; sourceTree = "<group>"; };
 		001348F79CA80B94DCD3E535 /* km */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = km; path = km.lproj/PrivateBrowsing.strings; sourceTree = "<group>"; };
 		00218A431FC749D7BC8EC05D /* homepageStoryCategoriesOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homepageStoryCategoriesOn.json; sourceTree = "<group>"; };
 		003141C6B19507C79B6C399C /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Menu.strings; sourceTree = "<group>"; };
@@ -6136,6 +6097,7 @@
 		435E3B1C2CE21D1F00274AB9 /* br */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = br; path = br.lproj/KeyboardAccessory.strings; sourceTree = "<group>"; };
 		435E3B1E2CE21D1F00274AB9 /* br */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = br; path = br.lproj/LibraryPanel.strings; sourceTree = "<group>"; };
 		435E3B202CE21D1F00274AB9 /* br */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = br; path = br.lproj/SuggestedSites.strings; sourceTree = "<group>"; };
+		435E3CAD30B8CB4700A843F3 /* ka */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ka; path = ka.lproj/Wallpapers.strings; sourceTree = "<group>"; };
 		435E4EF02A49AB3900F042C0 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Footer.strings"; sourceTree = "<group>"; };
 		435E4EF12A49AB3900F042C0 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/RememberCard.strings"; sourceTree = "<group>"; };
 		435E4EF22A49AB3900F042C0 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/UpdateCard.strings"; sourceTree = "<group>"; };
@@ -7404,6 +7366,7 @@
 		4390F7E32C57B1E800F52D3C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Toolbar.strings; sourceTree = "<group>"; };
 		4390FB26305A82BD00DC443F /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/QuickAnswers.strings; sourceTree = "<group>"; };
 		4391326B2C57B0BB00805AE1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Toolbar.strings; sourceTree = "<group>"; };
+		43913F8C30B8C9A1003BB386 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Camera.strings; sourceTree = "<group>"; };
 		43914B522B4C115A0028781C /* nn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nn; path = nn.lproj/ContextualHints.strings; sourceTree = "<group>"; };
 		43914B532B4C115B0028781C /* nn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nn; path = nn.lproj/Credentials.strings; sourceTree = "<group>"; };
 		43914B542B4C115B0028781C /* nn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nn; path = nn.lproj/FirefoxHomepage.strings; sourceTree = "<group>"; };
@@ -8077,6 +8040,7 @@
 		43B3869C2C57B446007728B6 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/ScanQRCode.strings; sourceTree = "<group>"; };
 		43B3869D2C57B446007728B6 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Toolbar.strings; sourceTree = "<group>"; };
 		43B388562C57B1830004C424 /* hy-AM */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hy-AM"; path = "hy-AM.lproj/Toolbar.strings"; sourceTree = "<group>"; };
+		43B3C9A930B8C9E2003415C1 /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/Wallpapers.strings"; sourceTree = "<group>"; };
 		43B3D33329DAEB53006B3FBC /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/Alert.strings"; sourceTree = "<group>"; };
 		43B3D33429DAEB53006B3FBC /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/BiometricAuthentication.strings"; sourceTree = "<group>"; };
 		43B3D33529DAEB53006B3FBC /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/EditCard.strings"; sourceTree = "<group>"; };
@@ -8493,6 +8457,7 @@
 		43CB99702C85D41700A31E4B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Bookmarks.strings; sourceTree = "<group>"; };
 		43CB99712C85D41700A31E4B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		43CB99722C85D41700A31E4B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SuggestedSites.strings; sourceTree = "<group>"; };
+		43CB9B2330B8CB1B0078DF17 /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/Wallpapers.strings; sourceTree = "<group>"; };
 		43CC19AD29225B5F00857F58 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SearchHeaderTitle.strings; sourceTree = "<group>"; };
 		43CC3D062B30625900CCE687 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ContextualHints.strings; sourceTree = "<group>"; };
 		43CC3D072B30625900CCE687 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/CredentialProvider.strings; sourceTree = "<group>"; };
@@ -8698,6 +8663,7 @@
 		43D531D7301B6F9C0033D00A /* co */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = co; path = co.lproj/WorldCup.strings; sourceTree = "<group>"; };
 		43D5688B306172850000E7A2 /* or */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = or; path = or.lproj/LibraryPanel.strings; sourceTree = "<group>"; };
 		43D5688C306172850000E7A2 /* or */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = or; path = or.lproj/Storage.strings; sourceTree = "<group>"; };
+		43D5AAD530B8CB9D003E14D5 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/TabsTray.strings; sourceTree = "<group>"; };
 		43D5C4642AC1A2D00072DA1C /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/Share.strings; sourceTree = "<group>"; };
 		43D5C4652AC1A2D00072DA1C /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/TabLocation.strings; sourceTree = "<group>"; };
 		43D5C57D2B30618200F8D6A2 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/ContextualHints.strings; sourceTree = "<group>"; };
@@ -9024,6 +8990,12 @@
 		43E198F82F6C1325007CA2BB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/ReaderModeBar.strings; sourceTree = "<group>"; };
 		43E1A3CF2CCFAC4300B4178C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/FxANotification.strings; sourceTree = "<group>"; };
 		43E1A3D02CCFAC4300B4178C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchEngineSelection.strings; sourceTree = "<group>"; };
+		43E1A53030B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/BrowserDataTransfer.strings; sourceTree = "<group>"; };
+		43E1A53130B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/GoogleLens.strings; sourceTree = "<group>"; };
+		43E1A53230B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/PrivacyDashboard.strings; sourceTree = "<group>"; };
+		43E1A53330B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/QuickAnswers.strings; sourceTree = "<group>"; };
+		43E1A53430B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/VPN.strings; sourceTree = "<group>"; };
+		43E1A53530B8C962006DF440 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Wallpapers.strings; sourceTree = "<group>"; };
 		43E1D7B029FFD6B5008F2117 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Notification.strings; sourceTree = "<group>"; };
 		43E1D7B129FFD6B5008F2117 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ZoomPageBar.strings; sourceTree = "<group>"; };
 		43E1DCD82C7C9AAB008E952F /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/NativeErrorPage.strings"; sourceTree = "<group>"; };
@@ -9313,6 +9285,9 @@
 		43E9CC602B83939800E1553B /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/PasswordAutofill.strings; sourceTree = "<group>"; };
 		43E9D7662EA1095A004CBA28 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Translations.strings; sourceTree = "<group>"; };
 		43E9F3A92D75C4C900F299BB /* hsb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hsb; path = hsb.lproj/AppIconSelection.strings; sourceTree = "<group>"; };
+		43EA417230B8CA5100B35F74 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/BrowserDataTransfer.strings"; sourceTree = "<group>"; };
+		43EA417330B8CA5100B35F74 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/VPN.strings"; sourceTree = "<group>"; };
+		43EA417430B8CA5100B35F74 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Wallpapers.strings"; sourceTree = "<group>"; };
 		43EA48202DDB4828009BFCC8 /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Shopping.strings"; sourceTree = "<group>"; };
 		43EA5CFD2D5A168E00C94B3A /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/ExternalLink.strings"; sourceTree = "<group>"; };
 		43EA5D942B8390F100F80A22 /* eu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = eu; path = eu.lproj/KeyboardAccessory.strings; sourceTree = "<group>"; };
@@ -12963,7 +12938,6 @@
 		F84B21D31A090F8100AAB793 /* ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84B21D81A090F8100AAB793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84B21D91A090F8100AAB793 /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
-		GM00000000000000000000T0 /* GodModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodModeTests.swift; sourceTree = "<group>"; };
 		F84B21E51A0910F600AAB793 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F84B21EF1A0910F600AAB793 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F84B22221A09122500AAB793 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
@@ -13061,6 +13035,46 @@
 		FFAD000CC3D68F506946CC2F /* DefaultVPNTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVPNTelemetry.swift; sourceTree = "<group>"; };
 		FFC049AA898EF4096E22F595 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/ClearHistoryConfirm.strings"; sourceTree = "<group>"; };
 		FFEB4308B5A82E56F1EEEC56 /* oc */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = oc; path = oc.lproj/AuthenticationManager.strings; sourceTree = "<group>"; };
+		GM0000000000000000000010 /* GodMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodMode.swift; sourceTree = "<group>"; };
+		GM0000000000000000000011 /* Core/GodModeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/GodModeConfig.swift; sourceTree = "<group>"; };
+		GM0000000000000000000012 /* Sideload/SideloadResiliencePatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sideload/SideloadResiliencePatcher.swift; sourceTree = "<group>"; };
+		GM0000000000000000000013 /* Diet/BackgroundDietManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet/BackgroundDietManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000014 /* Memory/RAMJetsamMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory/RAMJetsamMonitor.swift; sourceTree = "<group>"; };
+		GM0000000000000000000015 /* UI/RAMJetsamHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI/RAMJetsamHUDView.swift; sourceTree = "<group>"; };
+		GM0000000000000000000016 /* Detox/ProcessDetoxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detox/ProcessDetoxManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000017 /* CrashGuard/CrashGuardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashGuard/CrashGuardManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000030 /* Process/GodModeProcessPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process/GodModeProcessPool.swift; sourceTree = "<group>"; };
+		GM0000000000000000000031 /* Tabs/TabHibernationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs/TabHibernationManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000032 /* Tabs/VirtualTabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs/VirtualTabManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000033 /* Scripting/ExtremeLiteScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripting/ExtremeLiteScriptEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000034 /* Display/RetinaLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display/RetinaLimiter.swift; sourceTree = "<group>"; };
+		GM0000000000000000000035 /* Engine/DynamicJSEngineKiller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine/DynamicJSEngineKiller.swift; sourceTree = "<group>"; };
+		GM0000000000000000000036 /* Thermal/ThermalThrottler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermal/ThermalThrottler.swift; sourceTree = "<group>"; };
+		GM0000000000000000000050 /* Blocker/NativeContentBlockerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocker/NativeContentBlockerEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000051 /* Userscript/UserScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userscript/UserScriptEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000052 /* Media/MediaPlaybackPiPEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media/MediaPlaybackPiPEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000070 /* MITM/NetworkMITMEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MITM/NetworkMITMEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000071 /* TimeWarp/JSTimeWarpEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWarp/JSTimeWarpEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000072 /* AntiDebug/AntiAntiDebugEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiDebug/AntiAntiDebugEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000073 /* AntiAdblock/AntiAdblockDefusalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiAdblock/AntiAdblockDefusalEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000090 /* Profile/ProfileIsolationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile/ProfileIsolationManager.swift; sourceTree = "<group>"; };
+		GM0000000000000000000091 /* Session/SessionCloneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session/SessionCloneEngine.swift; sourceTree = "<group>"; };
+		GM0000000000000000000092 /* Privacy/AntiFingerprintingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy/AntiFingerprintingEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000B0 /* DevTools/DevToolsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/DevToolsEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000B1 /* DevTools/WebSocketMonitorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/WebSocketMonitorEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000B2 /* Server/LocalHTTPServerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server/LocalHTTPServerEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000B3 /* DevTools/DevToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTools/DevToolsViewController.swift; sourceTree = "<group>"; };
+		GM00000000000000000000D0 /* AI/AISummaryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI/AISummaryEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000D1 /* DarkMode/SmartDarkModeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode/SmartDarkModeEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000D2 /* DualView/FloatingDualWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualView/FloatingDualWebViewController.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F0 /* Automation/MacroEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation/MacroEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F1 /* Media/MediaBatchDownloaderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media/MediaBatchDownloaderEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F2 /* Knowledge/OfflineKnowledgeDBEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledge/OfflineKnowledgeDBEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F3 /* Filer/LocalFilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filer/LocalFilerViewController.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F4 /* UI/FloatingDPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI/FloatingDPadView.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F5 /* Automation/DOMChangeAlertEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation/DOMChangeAlertEngine.swift; sourceTree = "<group>"; };
+		GM00000000000000000000F6 /* Settings/GodModeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings/GodModeSettingsViewController.swift; sourceTree = "<group>"; };
+		GM00000000000000000000T0 /* GodModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodModeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -18699,52 +18713,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		GM0000000000000000000001 /* GodMode */ = {
-			isa = PBXGroup;
-			children = (
-				GM0000000000000000000010 /* GodMode.swift */,
-				GM0000000000000000000011 /* GodModeConfig.swift */,
-				GM0000000000000000000012 /* SideloadResiliencePatcher.swift */,
-				GM0000000000000000000013 /* BackgroundDietManager.swift */,
-				GM0000000000000000000014 /* RAMJetsamMonitor.swift */,
-				GM0000000000000000000015 /* RAMJetsamHUDView.swift */,
-				GM0000000000000000000016 /* ProcessDetoxManager.swift */,
-				GM0000000000000000000017 /* CrashGuardManager.swift */,
-				GM0000000000000000000030 /* GodModeProcessPool.swift */,
-				GM0000000000000000000031 /* TabHibernationManager.swift */,
-				GM0000000000000000000032 /* VirtualTabManager.swift */,
-				GM0000000000000000000033 /* ExtremeLiteScriptEngine.swift */,
-				GM0000000000000000000034 /* RetinaLimiter.swift */,
-				GM0000000000000000000035 /* DynamicJSEngineKiller.swift */,
-				GM0000000000000000000036 /* ThermalThrottler.swift */,
-				GM0000000000000000000050 /* NativeContentBlockerEngine.swift */,
-				GM0000000000000000000051 /* UserScriptEngine.swift */,
-				GM0000000000000000000052 /* MediaPlaybackPiPEngine.swift */,
-				GM0000000000000000000070 /* NetworkMITMEngine.swift */,
-				GM0000000000000000000071 /* JSTimeWarpEngine.swift */,
-				GM0000000000000000000072 /* AntiAntiDebugEngine.swift */,
-				GM0000000000000000000073 /* AntiAdblockDefusalEngine.swift */,
-				GM0000000000000000000090 /* ProfileIsolationManager.swift */,
-				GM0000000000000000000091 /* SessionCloneEngine.swift */,
-				GM0000000000000000000092 /* AntiFingerprintingEngine.swift */,
-				GM00000000000000000000B0 /* DevToolsEngine.swift */,
-				GM00000000000000000000B1 /* WebSocketMonitorEngine.swift */,
-				GM00000000000000000000B2 /* LocalHTTPServerEngine.swift */,
-				GM00000000000000000000B3 /* DevToolsViewController.swift */,
-				GM00000000000000000000D0 /* AISummaryEngine.swift */,
-				GM00000000000000000000D1 /* SmartDarkModeEngine.swift */,
-				GM00000000000000000000D2 /* FloatingDualWebViewController.swift */,
-				GM00000000000000000000F0 /* MacroEngine.swift */,
-				GM00000000000000000000F1 /* MediaBatchDownloaderEngine.swift */,
-				GM00000000000000000000F2 /* OfflineKnowledgeDBEngine.swift */,
-				GM00000000000000000000F3 /* LocalFilerViewController.swift */,
-				GM00000000000000000000F4 /* FloatingDPadView.swift */,
-				GM00000000000000000000F5 /* DOMChangeAlertEngine.swift */,
-				GM00000000000000000000F6 /* GodModeSettingsViewController.swift */,
-			);
-			path = GodMode;
-			sourceTree = "<group>";
-		};
 		F84B21F11A0910F600AAB793 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
@@ -18874,6 +18842,52 @@
 				2D44C1561FC142F59A89E890 /* OneLineTableViewCellTests.swift */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		GM0000000000000000000001 /* GodMode */ = {
+			isa = PBXGroup;
+			children = (
+				GM0000000000000000000010 /* GodMode.swift */,
+				GM0000000000000000000011 /* Core/GodModeConfig.swift */,
+				GM0000000000000000000012 /* Sideload/SideloadResiliencePatcher.swift */,
+				GM0000000000000000000013 /* Diet/BackgroundDietManager.swift */,
+				GM0000000000000000000014 /* Memory/RAMJetsamMonitor.swift */,
+				GM0000000000000000000015 /* UI/RAMJetsamHUDView.swift */,
+				GM0000000000000000000016 /* Detox/ProcessDetoxManager.swift */,
+				GM0000000000000000000017 /* CrashGuard/CrashGuardManager.swift */,
+				GM0000000000000000000030 /* Process/GodModeProcessPool.swift */,
+				GM0000000000000000000031 /* Tabs/TabHibernationManager.swift */,
+				GM0000000000000000000032 /* Tabs/VirtualTabManager.swift */,
+				GM0000000000000000000033 /* Scripting/ExtremeLiteScriptEngine.swift */,
+				GM0000000000000000000034 /* Display/RetinaLimiter.swift */,
+				GM0000000000000000000035 /* Engine/DynamicJSEngineKiller.swift */,
+				GM0000000000000000000036 /* Thermal/ThermalThrottler.swift */,
+				GM0000000000000000000050 /* Blocker/NativeContentBlockerEngine.swift */,
+				GM0000000000000000000051 /* Userscript/UserScriptEngine.swift */,
+				GM0000000000000000000052 /* Media/MediaPlaybackPiPEngine.swift */,
+				GM0000000000000000000070 /* MITM/NetworkMITMEngine.swift */,
+				GM0000000000000000000071 /* TimeWarp/JSTimeWarpEngine.swift */,
+				GM0000000000000000000072 /* AntiDebug/AntiAntiDebugEngine.swift */,
+				GM0000000000000000000073 /* AntiAdblock/AntiAdblockDefusalEngine.swift */,
+				GM0000000000000000000090 /* Profile/ProfileIsolationManager.swift */,
+				GM0000000000000000000091 /* Session/SessionCloneEngine.swift */,
+				GM0000000000000000000092 /* Privacy/AntiFingerprintingEngine.swift */,
+				GM00000000000000000000B0 /* DevTools/DevToolsEngine.swift */,
+				GM00000000000000000000B1 /* DevTools/WebSocketMonitorEngine.swift */,
+				GM00000000000000000000B2 /* Server/LocalHTTPServerEngine.swift */,
+				GM00000000000000000000B3 /* DevTools/DevToolsViewController.swift */,
+				GM00000000000000000000D0 /* AI/AISummaryEngine.swift */,
+				GM00000000000000000000D1 /* DarkMode/SmartDarkModeEngine.swift */,
+				GM00000000000000000000D2 /* DualView/FloatingDualWebViewController.swift */,
+				GM00000000000000000000F0 /* Automation/MacroEngine.swift */,
+				GM00000000000000000000F1 /* Media/MediaBatchDownloaderEngine.swift */,
+				GM00000000000000000000F2 /* Knowledge/OfflineKnowledgeDBEngine.swift */,
+				GM00000000000000000000F3 /* Filer/LocalFilerViewController.swift */,
+				GM00000000000000000000F4 /* UI/FloatingDPadView.swift */,
+				GM00000000000000000000F5 /* Automation/DOMChangeAlertEngine.swift */,
+				GM00000000000000000000F6 /* Settings/GodModeSettingsViewController.swift */,
+			);
+			path = GodMode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -21057,44 +21071,44 @@
 				FB16062100000000000000E2 /* GoogleLensImageProcessor.swift in Sources */,
 				ECD8E56C2FF7EB69002092C6 /* WaybackService.swift in Sources */,
 				GM0000000000000000000020 /* GodMode.swift in Sources */,
-				GM0000000000000000000021 /* GodModeConfig.swift in Sources */,
-				GM0000000000000000000022 /* SideloadResiliencePatcher.swift in Sources */,
-				GM0000000000000000000023 /* BackgroundDietManager.swift in Sources */,
-				GM0000000000000000000024 /* RAMJetsamMonitor.swift in Sources */,
-				GM0000000000000000000025 /* RAMJetsamHUDView.swift in Sources */,
-				GM0000000000000000000026 /* ProcessDetoxManager.swift in Sources */,
-				GM0000000000000000000027 /* CrashGuardManager.swift in Sources */,
-				GM0000000000000000000040 /* GodModeProcessPool.swift in Sources */,
-				GM0000000000000000000041 /* TabHibernationManager.swift in Sources */,
-				GM0000000000000000000042 /* VirtualTabManager.swift in Sources */,
-				GM0000000000000000000043 /* ExtremeLiteScriptEngine.swift in Sources */,
-				GM0000000000000000000044 /* RetinaLimiter.swift in Sources */,
-				GM0000000000000000000045 /* DynamicJSEngineKiller.swift in Sources */,
-				GM0000000000000000000046 /* ThermalThrottler.swift in Sources */,
-				GM0000000000000000000060 /* NativeContentBlockerEngine.swift in Sources */,
-				GM0000000000000000000061 /* UserScriptEngine.swift in Sources */,
-				GM0000000000000000000062 /* MediaPlaybackPiPEngine.swift in Sources */,
-				GM0000000000000000000080 /* NetworkMITMEngine.swift in Sources */,
-				GM0000000000000000000081 /* JSTimeWarpEngine.swift in Sources */,
-				GM0000000000000000000082 /* AntiAntiDebugEngine.swift in Sources */,
-				GM0000000000000000000083 /* AntiAdblockDefusalEngine.swift in Sources */,
-				GM00000000000000000000A0 /* ProfileIsolationManager.swift in Sources */,
-				GM00000000000000000000A1 /* SessionCloneEngine.swift in Sources */,
-				GM00000000000000000000A2 /* AntiFingerprintingEngine.swift in Sources */,
-				GM00000000000000000000C0 /* DevToolsEngine.swift in Sources */,
-				GM00000000000000000000C1 /* WebSocketMonitorEngine.swift in Sources */,
-				GM00000000000000000000C2 /* LocalHTTPServerEngine.swift in Sources */,
-				GM00000000000000000000C3 /* DevToolsViewController.swift in Sources */,
-				GM00000000000000000000E0 /* AISummaryEngine.swift in Sources */,
-				GM00000000000000000000E1 /* SmartDarkModeEngine.swift in Sources */,
-				GM00000000000000000000E2 /* FloatingDualWebViewController.swift in Sources */,
-				GM00000000000000000000G0 /* MacroEngine.swift in Sources */,
-				GM00000000000000000000G1 /* MediaBatchDownloaderEngine.swift in Sources */,
-				GM00000000000000000000G2 /* OfflineKnowledgeDBEngine.swift in Sources */,
-				GM00000000000000000000G3 /* LocalFilerViewController.swift in Sources */,
-				GM00000000000000000000G4 /* FloatingDPadView.swift in Sources */,
-				GM00000000000000000000G5 /* DOMChangeAlertEngine.swift in Sources */,
-				GM00000000000000000000G6 /* GodModeSettingsViewController.swift in Sources */,
+				GM0000000000000000000021 /* Core/GodModeConfig.swift in Sources */,
+				GM0000000000000000000022 /* Sideload/SideloadResiliencePatcher.swift in Sources */,
+				GM0000000000000000000023 /* Diet/BackgroundDietManager.swift in Sources */,
+				GM0000000000000000000024 /* Memory/RAMJetsamMonitor.swift in Sources */,
+				GM0000000000000000000025 /* UI/RAMJetsamHUDView.swift in Sources */,
+				GM0000000000000000000026 /* Detox/ProcessDetoxManager.swift in Sources */,
+				GM0000000000000000000027 /* CrashGuard/CrashGuardManager.swift in Sources */,
+				GM0000000000000000000040 /* Process/GodModeProcessPool.swift in Sources */,
+				GM0000000000000000000041 /* Tabs/TabHibernationManager.swift in Sources */,
+				GM0000000000000000000042 /* Tabs/VirtualTabManager.swift in Sources */,
+				GM0000000000000000000043 /* Scripting/ExtremeLiteScriptEngine.swift in Sources */,
+				GM0000000000000000000044 /* Display/RetinaLimiter.swift in Sources */,
+				GM0000000000000000000045 /* Engine/DynamicJSEngineKiller.swift in Sources */,
+				GM0000000000000000000046 /* Thermal/ThermalThrottler.swift in Sources */,
+				GM0000000000000000000060 /* Blocker/NativeContentBlockerEngine.swift in Sources */,
+				GM0000000000000000000061 /* Userscript/UserScriptEngine.swift in Sources */,
+				GM0000000000000000000062 /* Media/MediaPlaybackPiPEngine.swift in Sources */,
+				GM0000000000000000000080 /* MITM/NetworkMITMEngine.swift in Sources */,
+				GM0000000000000000000081 /* TimeWarp/JSTimeWarpEngine.swift in Sources */,
+				GM0000000000000000000082 /* AntiDebug/AntiAntiDebugEngine.swift in Sources */,
+				GM0000000000000000000083 /* AntiAdblock/AntiAdblockDefusalEngine.swift in Sources */,
+				GM00000000000000000000A0 /* Profile/ProfileIsolationManager.swift in Sources */,
+				GM00000000000000000000A1 /* Session/SessionCloneEngine.swift in Sources */,
+				GM00000000000000000000A2 /* Privacy/AntiFingerprintingEngine.swift in Sources */,
+				GM00000000000000000000C0 /* DevTools/DevToolsEngine.swift in Sources */,
+				GM00000000000000000000C1 /* DevTools/WebSocketMonitorEngine.swift in Sources */,
+				GM00000000000000000000C2 /* Server/LocalHTTPServerEngine.swift in Sources */,
+				GM00000000000000000000C3 /* DevTools/DevToolsViewController.swift in Sources */,
+				GM00000000000000000000E0 /* AI/AISummaryEngine.swift in Sources */,
+				GM00000000000000000000E1 /* DarkMode/SmartDarkModeEngine.swift in Sources */,
+				GM00000000000000000000E2 /* DualView/FloatingDualWebViewController.swift in Sources */,
+				GM00000000000000000000G0 /* Automation/MacroEngine.swift in Sources */,
+				GM00000000000000000000G1 /* Media/MediaBatchDownloaderEngine.swift in Sources */,
+				GM00000000000000000000G2 /* Knowledge/OfflineKnowledgeDBEngine.swift in Sources */,
+				GM00000000000000000000G3 /* Filer/LocalFilerViewController.swift in Sources */,
+				GM00000000000000000000G4 /* UI/FloatingDPadView.swift in Sources */,
+				GM00000000000000000000G5 /* Automation/DOMChangeAlertEngine.swift in Sources */,
+				GM00000000000000000000G6 /* Settings/GodModeSettingsViewController.swift in Sources */,
 				FB16062100000000000000E4 /* GoogleLensRequestBuilder.swift in Sources */,
 				6114442F306F5550000A7343 /* VPNManager.swift in Sources */,
 				FB16062100000000000000E6 /* GoogleLensService.swift in Sources */,
@@ -23922,6 +23936,7 @@
 				4365A6543077B1FD0065896C /* fa */,
 				43EE2642308A29C300AE603F /* sq */,
 				438AC84530935FDB00C793D1 /* co */,
+				43E1A53230B8C962006DF440 /* ca */,
 			);
 			name = PrivacyDashboard.strings;
 			sourceTree = "<group>";
@@ -24480,6 +24495,7 @@
 				4376F1A8306171470015149D /* hi-IN */,
 				4365A6353077B1FD0065896C /* fa */,
 				430EB68130AF13CC007D846F /* sq */,
+				43913F8C30B8C9A1003BB386 /* da */,
 			);
 			name = Camera.strings;
 			sourceTree = "<group>";
@@ -24916,6 +24932,8 @@
 				43074A8930A5DA4B00E6BA98 /* vi */,
 				430EB68230AF13CC007D846F /* sq */,
 				4343D11F30AF14230012A31A /* th */,
+				43E1A53430B8C962006DF440 /* ca */,
+				43EA417330B8CA5100B35F74 /* es-MX */,
 			);
 			name = VPN.strings;
 			sourceTree = "<group>";
@@ -25121,6 +25139,11 @@
 				437D5C7D30AF127300A0D03F /* ko */,
 				43E4F38E30AF1366008743AE /* ro */,
 				430EB68330AF13CC007D846F /* sq */,
+				43E1A53530B8C962006DF440 /* ca */,
+				43B3C9A930B8C9E2003415C1 /* en-CA */,
+				43EA417430B8CA5100B35F74 /* es-MX */,
+				43CB9B2330B8CB1B0078DF17 /* is */,
+				435E3CAD30B8CB4700A843F3 /* ka */,
 			);
 			name = Wallpapers.strings;
 			sourceTree = "<group>";
@@ -25765,6 +25788,7 @@
 				437D4B733008F8D100F25B93 /* ar */,
 				4376F1DD306171480015149D /* hi-IN */,
 				4365A66A3077B1FD0065896C /* fa */,
+				43D5AAD530B8CB9D003E14D5 /* lv */,
 			);
 			name = TabsTray.strings;
 			sourceTree = "<group>";
@@ -27798,6 +27822,7 @@
 				4361EF6E3093601A004C71E7 /* en-CA */,
 				4304D32730A5D78100817160 /* kab */,
 				4330369130AF0FBF007EF656 /* az */,
+				43E1A53130B8C962006DF440 /* ca */,
 			);
 			name = GoogleLens.strings;
 			sourceTree = "<group>";
@@ -28809,6 +28834,7 @@
 				438AC84630935FDB00C793D1 /* co */,
 				4361EF6F3093601A004C71E7 /* en-CA */,
 				43E2714D309360C600CEA034 /* hr */,
+				43E1A53330B8C962006DF440 /* ca */,
 			);
 			name = QuickAnswers.strings;
 			sourceTree = "<group>";
@@ -28867,6 +28893,8 @@
 				43C017AD30A5D64A00B7CAFE /* eo */,
 				4304D32630A5D78100817160 /* kab */,
 				4343D11E30AF14230012A31A /* th */,
+				43E1A53030B8C962006DF440 /* ca */,
+				43EA417230B8CA5100B35F74 /* es-MX */,
 			);
 			name = BrowserDataTransfer.strings;
 			sourceTree = "<group>";
